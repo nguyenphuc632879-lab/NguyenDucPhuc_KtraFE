@@ -1,0 +1,420 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiki</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            font-size: 13px;
+            background-color: #f5f5fa;
+        }
+
+       
+        .freeship {
+            background-color: #e8fff0;
+            color: green;
+            text-align: center;
+            padding: 6px;
+            font-size: 11px;
+        }
+
+        
+        .header {
+            background-color: white;
+            padding: 15px 60px;
+            overflow: hidden;
+        }
+
+        .logo {
+            float: left;
+            width: 100px;
+            text-align: center;
+            color: #0b74e5;
+        }
+
+            .logo h1 {
+                font-size: 32px;
+            }
+
+        .search {
+            float: left;
+            width: 700px;
+            margin-left: 30px;
+        }
+
+        .search-box {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+            .search-box input {
+                border: none;
+                outline: none;
+                width: 550px;
+                margin-left: 10px;
+            }
+
+            .search-box button {
+                border: none;
+                background-color: white;
+                color: #0b74e5;
+            }
+
+        .tukhoa {
+            color: gray;
+            font-size: 12px;
+            margin-top: 8px;
+        }
+
+        .taikhoan {
+            float: right;
+            width: 300px;
+            color: gray;
+        }
+
+        .diachi {
+            margin-top: 15px;
+            font-size: 12px;
+        }
+
+   
+        .camket {
+            background-color: white;
+            border-top: 1px solid #ddd;
+            padding: 10px 60px;
+            font-size: 11px;
+        }
+
+            .camket b {
+                color: #0b74e5;
+                margin-right: 20px;
+            }
+
+            .camket span {
+                margin-right: 30px;
+            }
+
+            .camket i {
+                color: #0b74e5;
+            }
+
+      
+        .wrapper {
+            width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .duongdan {
+            padding: 12px 0;
+            color: gray;
+        }
+
+       
+        .trai {
+            float: left;
+            width: 200px;
+        }
+
+        .menu {
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+            .menu h4 {
+                margin-bottom: 10px;
+            }
+
+            .menu p {
+                padding: 8px 0;
+                border-top: 1px solid #eee;
+                font-size: 11px;
+            }
+
+        .taitro {
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+            .taitro img {
+                width: 120px;
+                height: 120px;
+                background-color: #eee;
+            }
+
+            .taitro p {
+                margin: 6px 0;
+            }
+
+            .taitro button {
+                background-color: #0b74e5;
+                color: white;
+                border: none;
+                padding: 6px 12px;
+                margin-top: 8px;
+            }
+
+       
+       
+
+        .tieude {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+      
+        .banner {
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .banner1 {
+            float: left;
+            width: 380px;
+            height: 110px;
+            background-color: #eee;
+            padding: 30px;
+        }
+
+        .banner2 {
+            float: right;
+            width: 590px;
+            height: 110px;
+            background-color: #9fd8ff;
+            padding: 15px 30px;
+            color: #2b3dcc;
+        }
+
+   
+        .danhmuc {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+            .danhmuc h4 {
+                margin-bottom: 10px;
+            }
+
+        .dm {
+            float: left;
+            width: 190px;
+            text-align: center;
+        }
+
+            .dm i {
+                font-size: 30px;
+                background-color: #eee;
+                border-radius: 50%;
+                padding: 15px;
+                margin-bottom: 8px;
+            }
+
+       
+       
+
+        .loc1 {
+            margin: 10px 0;
+        }
+
+        .loc2 {
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+
+            .loc2 select {
+                float: right;
+            }
+
+     
+        .sp {
+            float: left;
+            width: 238px;
+            background-color: white;
+            padding: 10px;
+            margin-right: 9px;
+            margin-bottom: 10px;
+        }
+
+            .sp img {
+             
+                height: 200px;
+                background-color:navajowhite;
+            }
+
+            .sp p {
+                margin: 6px 0;
+            }
+
+            .sp h3 {
+                margin: 8px 0;
+            }
+
+        .chinhhang {
+            color: #0b3fb5;
+            font-size: 10px;
+        }
+
+        .do {
+            color: red;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="freeship">Freeship đơn từ 45k, giảm nhiều hơn cùng FREESHIP XTRA</div>
+    <div class="header">
+        <div class="logo">
+            <h1>TIKI</h1>
+            <p>Tốt & Nhanh</p>
+        </div>
+        <div class="search">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Giá siêu rẻ">
+                <button>Tìm kiếm</button>
+            </div>
+            <p class="tukhoa">điện gia dụng &nbsp; xe cộ &nbsp; mẹ & bé &nbsp; khỏe đẹp &nbsp; nhà cửa &nbsp; sách &nbsp; thể thao &nbsp; iphone 13 &nbsp; điện thoại &nbsp; ipad air 5 &nbsp; oppo a17k</p>
+        </div>
+        <div class="taikhoan">
+            <p><i class="fas fa-home"></i> Trang chủ &nbsp;&nbsp; <i class="fas fa-user"></i> Tài khoản &nbsp;&nbsp; <i class="fas fa-shopping-cart"></i></p>
+            <p class="diachi"><i class="fas fa-map-marker-alt"></i> Giao đến: Q.1, P. Bến Nghé, Hồ Chí Minh</p>
+        </div>
+    </div>
+
+
+    <div class="camket">
+        <b>Cam kết</b>
+        <span><i class="fas fa-check-circle"></i> 100% hàng thật</span>
+        <span><i class="fas fa-check-circle"></i> Hoàn 200% nếu hàng giả</span>
+        <span><i class="fas fa-check-circle"></i> 30 ngày đổi trả</span>
+        <span><i class="fas fa-check-circle"></i> Giao nhanh 2h</span>
+        <span><i class="fas fa-check-circle"></i> Giá siêu rẻ</span>
+        <span><i class="fas fa-check-circle"></i> Freeship mọi đơn</span>
+    </div>
+
+    <div class="wrapper">
+
+        <p class="duongdan">Trang chủ > Điện Thoại - Máy Tính Bảng</p>
+
+    
+        <div class="trai">
+            <div class="menu">
+                <h4>Khám phá theo danh mục</h4>
+                <p>Điện thoại Smartphone</p>
+                <p>Máy tính bảng</p>
+                <p>Máy đọc sách</p>
+                <p>Điện thoại phổ thông</p>
+                <p>Điện thoại bàn</p>
+            </div>
+
+            <div class="taitro">
+                <img src="images/iphone-1.jpg">
+                <p>Tiki Trading</p>
+                <p>Apple iPhone 16 Pro Max - Titan Tự Nhiên - 512GB</p>
+                <h3>40.990.000 đ</h3>
+                <button>Xem thêm</button>
+            </div>
+
+            <div class="taitro">
+                <img src="images/iphone-2.jpg">
+                <p>Tiki Trading</p>
+                <p>Apple iPhone 16 Pro - Titan Tự Nhiên - 128GB</p>
+                <h3>28.990.000 đ</h3>
+                <button>Xem thêm</button>
+            </div>
+        </div>
+
+      
+
+          
+            <div class="danhmuc">
+                <h4>Khám phá theo danh mục</h4>
+                <div class="dm">
+                    <i class="fas fa-mobile-alt"></i>
+                    <p>Điện thoại Smartphone</p>
+                </div>
+                <div class="dm">
+                    <i class="fas fa-tablet-alt"></i>
+                    <p>Máy tính bảng</p>
+                </div>
+                <div class="dm">
+                    <i class="fas fa-book"></i>
+                <div class="dm">
+                    <i class="fas fa-mobile"></i>
+                    <p>Điện thoại phổ thông</p>
+                </div>
+                <div class="dm">
+                    <i class="fas fa-phone"></i>
+                    <p>Điện thoại bàn</p>
+                </div>
+            </div>
+
+           
+          
+                <div class="loc2">
+                    <input type="checkbox"> Giao siêu tốc 2H &nbsp;
+                    <input type="checkbox"> Siêu rẻ &nbsp;
+                    <input type="checkbox"> FREESHIP XTRA &nbsp;
+                    <input type="checkbox"> từ 4 sao
+                    <select>
+                        <option>Phổ biến</option>
+                        <option>Giá thấp đến cao</option>
+                        <option>Giá cao đến thấp</option>
+                    </select>
+                </div>
+            </div>
+
+           
+            <div class="sp">
+                <img src="images/iphone-1.jpg">
+                <p class="chinhhang">FREESHIP XTRA - CHÍNH HÃNG</p>
+                <h3>40.990.000đ</h3>
+                <p>APPLE</p>
+                <p>Apple iPhone 16 Pro Max</p>
+                <p class="ban"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> Đã bán 95</p>
+            </div>
+            <div class="sp">
+                <img src="images/iphone-3.jpg">
+                <p class="chinhhang">FREESHIP XTRA - CHÍNH HÃNG</p>
+                <h3 class="do">25.490.000đ -2%</h3>
+                <p>APPLE</p>
+                <p>Apple iPhone 16 - Xanh Mòng Két - 256GB</p>
+                <p class="ban"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> Đã bán 15</p>
+            </div>
+
+            <div class="sp">
+                <img src="images/iphone-4.jpg">
+                <p class="chinhhang">FREESHIP XTRA - CHÍNH HÃNG</p>
+                <h3>25.990.000đ</h3>
+                <p>APPLE</p>
+                <p>Apple iPhone 16 Plus</p>
+                <p class="ban"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> Đã bán 12</p>
+            </div>
+
+        </div>
+   
+
+</body>
+</html>
